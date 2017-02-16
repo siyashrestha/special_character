@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+function validate()
+	{
+		var str=document.getElementById('txt').value;
+		var count=0;
+		var tmp=[]=str.split('');
+		for(var i=0;i<str.length;i++){
+			if(!tmp[i].match(/[a-zA-Z0-9]+/)){
+				count++;
+			}
+		}
+		alert(count);
+		}
+
+</script>
+
+<input type="text" id="txt" name="txt">
+<button onclick="validate()"></button>
+  </body>
+  </html>
